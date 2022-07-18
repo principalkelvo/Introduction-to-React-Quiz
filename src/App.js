@@ -70,7 +70,7 @@ function App() {
   const block = isBlock ? "block" : "none";
   const user = users.map((user) => <li key={user.id}>{user.name}</li>);
   return (
-    <>
+    <div className="container">
       <img src={logo} className="App-logo" alt="logo" />
       <h3>User names</h3>
       <ul>{user}</ul>
@@ -80,7 +80,7 @@ function App() {
       <Parent>
         <Child />
       </Parent>
-    </>
+    </div>
   );
 }
 
